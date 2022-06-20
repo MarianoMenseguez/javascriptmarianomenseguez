@@ -1,0 +1,97 @@
+@import "resets";
+@import "variable";
+@import "mixin";
+.body1 {
+  background-color: $color;
+    margin: 0;
+    padding: 0;
+    .li {
+        color: white;
+      }
+  }
+  .main1 {
+    text-align: center;
+    border: solid white;
+    background-color: $color;
+    color: white;
+    #lp {
+      @extend #historia
+    }
+
+    .imagen1 {
+        width: 45%;
+        height: 30%;
+        border: solid white;
+        animation: from-right 4s ease;
+      }
+  }
+  .footer {
+    padding: 5px;
+    margin: 5px solid white;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align:center;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; 
+  }
+  .body2 {
+    background-color: $color;
+    margin: 0;
+    padding: 0;
+  
+  }
+    #historia {
+       @include flexcenter(column);
+      width: 80%;
+      margin: 0 auto;
+        font-weight: map-get($font-weights, bold);
+        
+      &:hover {
+        color: black
+       }
+    }
+  
+  .body3 {
+    background-color: $color;
+    margin: 0;
+    padding: 0;
+    .imagen3 {
+        width: 45%;
+      height: 45%;
+      transition: 3seg;
+      }
+      #vientos {
+        width: 45%;
+        height: 30%;
+        border: solid white;
+        animation: from-right 4s ease;
+      }
+      #bombos {
+        width: 45%;
+        height: 30%;
+        border: solid white;
+        animation: from-right 4s ease;
+      }
+  }
+  .body4 {
+    background-color: $color;
+    margin: 0;
+    padding: 0;
+  }
+  .body5 {
+    background-color: $color;
+    margin: 0;
+    padding: 0;
+  }
+  @keyframes from-right {
+    0% {
+      opacity: 0;
+      transform: translatex(80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translatex(0px);
+    }
+  }
