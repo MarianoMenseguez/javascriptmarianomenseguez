@@ -49,8 +49,12 @@ form1.addEventListener('submit', function (event1) {
         'Los piratas celestes de alberdi!',
       )
 })
+// carrito : 
+// [{getItem: 345
+//     cantidad
+//     precio_unitario}]
 
-
+//     [{id:345,decripcion:"remera",precio:345}]
 // let entrada2 = prompt("Te gusto algun producto?");
 // if ((entrada2 == "si") || (entrada2 == "SI")) {
 //     alert("Perfecto, te ayudaremos a elegir correctamente");
